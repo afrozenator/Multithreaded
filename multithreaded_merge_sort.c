@@ -62,6 +62,7 @@ void merge(TYPE *data, int left, int right, int tid) {
     while (i <= right) {
         data[i++] = c[ctr++];
     }
+    free(c);
     return;
 }
 
@@ -204,4 +205,6 @@ int main(int argc, char **argv) {
     for (i = 0; i < n; ++i) {
 		printf("Num: %10d\n", p[i]);
 	}
+    free(p);
+    return 0;
 }
