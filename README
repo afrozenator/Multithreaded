@@ -1,0 +1,9 @@
+Multithreaded codes using pthreads.
+
+multithreaded_merge_sort.c
+DESCRIPTION
+This program uses pthreads, to create threads and calling merge sort
+if the underlying array is less than |MIN_LENGTH| or if we can't create
+any more threads will call C-Lib |qsort|.
+COMPILATION
+gcc -pthread multithreaded_merge_sort.c
