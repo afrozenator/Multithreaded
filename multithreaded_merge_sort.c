@@ -206,5 +206,6 @@ int main(int argc, char **argv) {
 		printf("Num: %10d\n", p[i]);
 	}
     free(p);
+    pthread_mutex_destroy(&lock_number_of_threads);
     return 0;
 }
